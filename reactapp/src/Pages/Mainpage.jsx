@@ -1,14 +1,18 @@
 import React from 'react'
 import Searchbar from '../Components/Searchbar'
 import Container from '../Components/Container'
+import Navbar from '../Components/Navbar'
+import CategoriesPage from '../Components/Categories'
 
 function Mainpage() {
   return (
-        <div className='search-bar'>
+        <div className='Mainpage'>
+          <Navbar>
           <Searchbar placeholder="Search here ... "/>
-          <Container/>
+          <CategoriesPage/>
+          </Navbar>
         </div>
   )
 }
 
-export default Mainpage
+export default Mainpage;

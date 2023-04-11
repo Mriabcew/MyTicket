@@ -11,15 +11,18 @@ import {
 }from "react-icons/bs";
 import { NavLink } from 'react-router-dom';
 import Logo from './Logo';
-
 import { SlBriefcase } from "react-icons/sl";
+import { BiLogOutCircle } from "react-icons/bi";
+import './Navbar.css';
+
+
 
 const Navbar = ({children}) => {
   const[isOpen ,setIsOpen] = useState(false);
   const toggle = () => setIsOpen (!isOpen);
   const menuItem=[
     {
-        path:"/",
+        path:"/Mainpage",
         name:"Main",
         icon:<AiFillHome/>
     },
@@ -37,6 +40,11 @@ const Navbar = ({children}) => {
         path:"/Profile",
         name:"Profile",
         icon:<FaUserAlt/>
+    },
+    {
+        path:"/",
+        name:"Logout",
+        icon:<BiLogOutCircle/>
     }
 ]
 return (

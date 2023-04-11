@@ -1,13 +1,16 @@
-import React from 'react'
-import Searchbar from '../Components/Searchbar'
-import Container from '../Components/Container'
+import React from 'react';
+import Searchbar from '../Components/Searchbar';
+import Navbar from '../Components/Navbar';
+import Tickets from '../Components/Tickets';
 
 function MyTickets() {
   return (
-    <div className='search-bar'>
+    <div className='MyTickets'>
+        <Navbar>
           <Searchbar placeholder="Search here ... "/>
-          <Container/>
-        </div>
+          <Tickets/>
+        </Navbar>
+     </div>
   )
 }
 

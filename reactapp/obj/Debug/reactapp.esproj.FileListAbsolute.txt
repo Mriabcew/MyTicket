@@ -1,2 +1,4 @@
 J:\ZTPAI\MyTicket\reactapp\obj\Debug\reactapp.esproj.SuggestedBindingRedirects.cache
 J:\ZTPAI\MyTicket\reactapp\obj\Debug\reactapp.esproj.CoreCompileInputs.cache
+D:\Michał\ZTPAI\reactapp\obj\Debug\reactapp.esproj.SuggestedBindingRedirects.cache
+D:\Michał\ZTPAI\reactapp\obj\Debug\reactapp.esproj.CoreCompileInputs.cache
