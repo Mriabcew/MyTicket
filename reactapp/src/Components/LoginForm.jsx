@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./LoginForm.css";
+import "./CSS/LoginForm.css";
 import { Link } from "react-router-dom";
 
 const LoginForm = () => {
@@ -17,7 +17,6 @@ const LoginForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(`Username: ${username}, Password: ${password}`);
-    // Do something with the username and password
   };
 
   return (
@@ -31,7 +30,7 @@ const LoginForm = () => {
           Password:
           <input className="LoginInput" type="password" value={password} onChange={handlePasswordChange} />
         </label>
-        <button type="submit">Log In</button>
+        <button type="submit"><Link to="/Mainpage">Log In</Link></button>
        <label>
         Nie masz konta <Link to="/Register">Zarejstruj sie</Link>
        </label>

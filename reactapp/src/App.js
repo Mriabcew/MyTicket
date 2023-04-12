@@ -7,6 +7,7 @@ import MyTickets from './Pages/MyTickets';
 import Profile from './Pages/Profile';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
+import Settings from './Pages/Settings';
 
 
 export default class App extends Component {
@@ -27,6 +28,7 @@ export default class App extends Component {
                         <Route path="/MyTickets"element={<MyTickets/>}/>
                         <Route path="/Profile"element={<Profile/>}/>
                         <Route path='/Mainpage'element={<Mainpage/>}/>
+                        <Route path='/Settings'element={<Settings/>}/>
                     </Routes>  
             </BrowserRouter>
             </div>

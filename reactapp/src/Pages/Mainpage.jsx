@@ -1,6 +1,5 @@
 import React from 'react'
 import Searchbar from '../Components/Searchbar'
-import Container from '../Components/Container'
 import Navbar from '../Components/Navbar'
 import CategoriesPage from '../Components/Categories'
 

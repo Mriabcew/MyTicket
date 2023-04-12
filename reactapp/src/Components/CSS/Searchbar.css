@@ -15,6 +15,10 @@
     height: 30px;
     width: 100%;
   }
+
+  input.searchBar{
+    border-radius: 45px;
+  }
   
   .searchIcon {
     height: 60px;

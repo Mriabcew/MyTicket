@@ -9,11 +9,14 @@ import {
 import {
     BsCalendarWeek
 }from "react-icons/bs";
+import {
+    IoMdSettings
+} from "react-icons/io";
 import { NavLink } from 'react-router-dom';
 import Logo from './Logo';
 import { SlBriefcase } from "react-icons/sl";
 import { BiLogOutCircle } from "react-icons/bi";
-import './Navbar.css';
+import './CSS/Navbar.css';
 
 
 
@@ -23,7 +26,7 @@ const Navbar = ({children}) => {
   const menuItem=[
     {
         path:"/Mainpage",
-        name:"Main",
+        name:"Main Page",
         icon:<AiFillHome/>
     },
     {
@@ -40,6 +43,11 @@ const Navbar = ({children}) => {
         path:"/Profile",
         name:"Profile",
         icon:<FaUserAlt/>
+    },
+    {
+        path:"/Settings",
+        name:"Settings",
+        icon:<IoMdSettings/>
     },
     {
         path:"/",

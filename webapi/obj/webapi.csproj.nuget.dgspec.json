@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Michał\\ZTPAI\\webapi\\webapi.csproj": {}
+    "J:\\ZTPAI\\MyTicket\\webapi\\webapi.csproj": {}
   },
   "projects": {
-    "D:\\Michał\\ZTPAI\\webapi\\webapi.csproj": {
+    "J:\\ZTPAI\\MyTicket\\webapi\\webapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Michał\\ZTPAI\\webapi\\webapi.csproj",
+        "projectUniqueName": "J:\\ZTPAI\\MyTicket\\webapi\\webapi.csproj",
         "projectName": "webapi",
-        "projectPath": "D:\\Michał\\ZTPAI\\webapi\\webapi.csproj",
-        "packagesPath": "C:\\Users\\Magda\\.nuget\\packages\\",
-        "outputPath": "D:\\Michał\\ZTPAI\\webapi\\obj\\",
+        "projectPath": "J:\\ZTPAI\\MyTicket\\webapi\\webapi.csproj",
+        "packagesPath": "C:\\Users\\thefo\\.nuget\\packages\\",
+        "outputPath": "J:\\ZTPAI\\MyTicket\\webapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Magda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thefo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

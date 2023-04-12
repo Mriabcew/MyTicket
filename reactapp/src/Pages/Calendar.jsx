@@ -1,7 +1,7 @@
 import React from 'react';
 import {Calendar as Cal }from 'react-calendar';
 import Navbar from '../Components/Navbar';
-import "./Calendar.css";
+import "./CSS/Calendar.css";
 
 function Calendar() {
   return (

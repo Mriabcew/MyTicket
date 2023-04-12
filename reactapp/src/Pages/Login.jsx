@@ -2,7 +2,7 @@
 
 import Logo from '../Components/Logo';
 import LoginForm from '../Components/LoginForm';
-import './Login.css';
+import './CSS/Login.css';
 
 
 const LoginPage = () => {
