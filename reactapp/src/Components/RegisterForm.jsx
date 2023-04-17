@@ -15,7 +15,7 @@ function RegisterForm() {
   return (
     <div>
     <h1>Register</h1>
-    <form onSubmit={handleSubmit}>
+    <form className='RegisterForm' onSubmit={handleSubmit}>
       <label>
         First Name:
         <input type="text" value={firstName} onChange={(e) => setFirstName(e.target.value)} />

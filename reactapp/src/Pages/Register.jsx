@@ -4,7 +4,9 @@ import RegisterForm from '../Components/RegisterForm';
 
 function Register() {
   return (
+    <div className='container'>
     <RegisterForm/>
+    </div>
   );
 }
 

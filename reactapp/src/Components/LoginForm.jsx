@@ -21,7 +21,7 @@ const LoginForm = () => {
 
   return (
     <div className="form-container">
-      <form onSubmit={handleSubmit}>
+      <form className="LoginForm"onSubmit={handleSubmit}>
         <label>
           Username:
           <input className="LoginInput" type="text" value={username} onChange={handleUsernameChange} />
