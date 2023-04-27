@@ -1,7 +1,7 @@
 import React from 'react'
-import Searchbar from '../Components/Searchbar'
-import Navbar from '../Components/Navbar'
-import CategoriesPage from '../Components/Categories'
+import Searchbar from '../components/Searchbar'
+import Navbar from '../components/Navbar'
+import CategoriesPage from '../components/Categories'
 
 function Mainpage() {
   return (

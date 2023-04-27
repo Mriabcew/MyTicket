@@ -31,3 +31,13 @@ J:\ZTPAI\MyTicket\webapi\obj\Debug\net7.0\refint\webapi.dll
 J:\ZTPAI\MyTicket\webapi\obj\Debug\net7.0\webapi.pdb
 J:\ZTPAI\MyTicket\webapi\obj\Debug\net7.0\webapi.genruntimeconfig.cache
 J:\ZTPAI\MyTicket\webapi\obj\Debug\net7.0\ref\webapi.dll
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\Humanizer.dll
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\Mono.TextTemplating.dll
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\Npgsql.dll
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\System.CodeDom.dll

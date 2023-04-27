@@ -1,7 +1,7 @@
 import React from 'react';
-import Searchbar from '../Components/Searchbar';
-import Navbar from '../Components/Navbar';
-import Tickets from '../Components/Tickets';
+import Searchbar from '../components/Searchbar';
+import Navbar from '../components/Navbar';
+import Tickets from '../components/Tickets';
 
 function MyTickets() {
   return (

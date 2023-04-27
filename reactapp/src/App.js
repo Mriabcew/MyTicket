@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './App.css';
-import Calendar from './Pages/Calendar';
-import Mainpage from './Pages/Mainpage';
-import MyTickets from './Pages/MyTickets';
-import Profile from './Pages/Profile';
-import Login from './Pages/Login';
-import Register from './Pages/Register';
-import Settings from './Pages/Settings';
+import './styles/App.css';
+import Calendar from './pages/Calendar';
+import Mainpage from './pages/Mainpage';
+import MyTickets from './pages/MyTickets';
+import Profile from './pages/Profile';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Settings from './pages/Settings';
 
 
 export default class App extends Component {

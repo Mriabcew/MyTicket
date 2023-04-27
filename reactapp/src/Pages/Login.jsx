@@ -1,7 +1,7 @@
 
 
-import Logo from '../Components/Logo';
-import LoginForm from '../Components/LoginForm';
+import Logo from '../components/Logo';
+import LoginForm from '../components/LoginForm';
 import './CSS/Login.css';
 
 
