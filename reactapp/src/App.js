@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+
 import './styles/App.css';
-import Calendar from './pages/Calendar';
 import Mainpage from './pages/Mainpage';
-import MyTickets from './pages/MyTickets';
 import Profile from './pages/Profile';
-import Login from './pages/Login';
-import Register from './pages/Register';
-import Settings from './pages/Settings';
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
 
 
 export default class App extends Component {
@@ -19,19 +18,14 @@ export default class App extends Component {
 
     render() {
         return (
-            <div>
             <BrowserRouter>
                     <Routes>
-                        <Route path="/"element={<Login/>}/>
-                        <Route path='/Register'element={<Register/>}/>
-                        <Route path="/Calendar"element={<Calendar/>}/>
-                        <Route path="/MyTickets"element={<MyTickets/>}/>
-                        <Route path="/Profile"element={<Profile/>}/>
-                        <Route path='/Mainpage'element={<Mainpage/>}/>
-                        <Route path='/Settings'element={<Settings/>}/>
+                        <Route path='/' element={<LoginPage/>}/>
+                        <Route path='/register' element={<RegisterPage/>}/>
+                        <Route path="/home"element={<Mainpage/>}/>
+                        <Route path="/profile"element={<Profile/>}/>
                     </Routes>  
             </BrowserRouter>
-            </div>
-        );
-    }
+         );
 }
+};

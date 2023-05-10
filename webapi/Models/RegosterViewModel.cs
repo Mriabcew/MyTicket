@@ -12,5 +12,5 @@ public class RegisterViewModel
     [DataType(DataType.Password)]
     public string Password { get; set; }
     
-    public string Name { get; set; }
+    public string Username { get; set; }
 }

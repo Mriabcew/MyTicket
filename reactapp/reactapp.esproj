@@ -12,4 +12,7 @@
     <Configurations>Debug;Release</Configurations>
     <Platforms>AnyCPU</Platforms>
   </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="images\uploads\profileImages" />
+  </ItemGroup>
 </Project>

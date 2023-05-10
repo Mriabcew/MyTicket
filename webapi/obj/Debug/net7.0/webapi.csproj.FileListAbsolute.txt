@@ -41,3 +41,4 @@ J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\Mono.TextTemplating.dll
 J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\Npgsql.dll
 J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\System.CodeDom.dll
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\BCrypt.Net-Next.dll

@@ -1,40 +1,33 @@
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using webapi.Data;
+using webapi.Interfaces;
 using webapi.Models;
 using webapi.Repositories;
 
 namespace webapi.Controllers;
 [ApiController]
-[Route("api/[controller]")]
+[Route("/[controller]")]
 public class UserController : ControllerBase
 {
-    private readonly ApplicationDbContext _context;
-    public UserController(ApplicationDbContext context)
+    private const int MaxFileSize = 2048 * 2048;
+    private const string UploadDirectory = "/../reactapp/images/uploads/profileImages";
+    private readonly IUserRepository _userRepository;
+
+    public UserController(IUserRepository userRepository)
     {
-        _context = context;
+        _userRepository = userRepository;
     }
 
-    [HttpPost]
-    public async Task<IActionResult> Post([FromBody] RegisterViewModel model)
+    [HttpGet("{id}")]
+    public async Task<ActionResult<User>> GetUser(int id)
     {
-        if (!ModelState.IsValid)
+        var user = await _userRepository.GetUserByIdAsync(id);
+        if (user == null)
         {
-            return BadRequest(ModelState);
+            return NotFound();
         }
 
-        var user = new User
-        {
-            Name = model.Name,
-            Email = model.Email,
-            Password = model.Password
-            //#TODO jeśli używasz BCrypt.Net, należy zainstalować nuget package BCrypt.Net-Next
-        };
-
-        _context.Users.Add(user);
-        await _context.SaveChangesAsync();
-
-        return Ok();
+        return user;
     }
+    
 }

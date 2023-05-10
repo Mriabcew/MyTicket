@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Npgsql.EntityFrameworkCore.PostgreSQL;
 using webapi.Data;
+using webapi.Interfaces;
+using webapi.Repositories;
 
 internal class Program
 {
@@ -9,8 +11,8 @@ internal class Program
         var builder = WebApplication.CreateBuilder(args);
 
         // Add services to the container.
-
         builder.Services.AddControllers();
+        builder.Services.AddScoped<IUserRepository, UserRepository>();
         builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseNpgsql(builder.Configuration.GetConnectionString("MyTicket")));
 
@@ -19,6 +21,13 @@ internal class Program
         builder.Services.AddSwaggerGen();
 
         var app = builder.Build();
+
+        app.UseCors(b =>
+        {
+            b.AllowAnyOrigin();
+            b.AllowAnyMethod();
+            b.AllowAnyHeader();
+        });
 
         // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment())
