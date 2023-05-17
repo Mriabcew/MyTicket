@@ -10,4 +10,6 @@ public interface ITicketRepository
     Task<List<Ticket>> GetAllTicketAsync();
     Task<Ticket> Update(Ticket ticket);
     Task<bool> Delete(Ticket ticket);
+
+    Task<List<Ticket>> GetTicketsByUserId(int id);
 }

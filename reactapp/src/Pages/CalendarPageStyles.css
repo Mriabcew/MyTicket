@@ -1,0 +1,25 @@
+.react-calendar__navigation{
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.react-calendar__tile.react-calendar__tile--now{
+    background-color:rgba(200, 0, 255,1);
+}
+
+
+.react-calendar__month-view__weekdays__weekday{
+    display: flex;
+    justify-content: center;
+}
+
+abbr{
+    text-decoration: none;
+
+}
+
+.react-calendar__tile.react-calendar__month-view__days__day.react-calendar__month-view__days__day--neighboringMonth
+{
+    background-color:gray;
+}

@@ -3,6 +3,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL;
 using webapi.Data;
 using webapi.Interfaces;
 using webapi.Repositories;
+using webapi.Services;
 
 internal class Program
 {
@@ -12,6 +13,7 @@ internal class Program
 
         // Add services to the container.
         builder.Services.AddControllers();
+        builder.Services.AddScoped<ITicketRepository, TicketRepository>();
         builder.Services.AddScoped<IUserRepository, UserRepository>();
         builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseNpgsql(builder.Configuration.GetConnectionString("MyTicket")));

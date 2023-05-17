@@ -1,0 +1,9 @@
+.category-grid {
+  gap: 10%;
+  margin:3em;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    margin-bottom: 1em;
+  }
+ 

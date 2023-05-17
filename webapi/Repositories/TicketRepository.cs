@@ -34,6 +34,17 @@ public class TicketRepository:Repository,ITicketRepository
         return await _context.Tickets.Where(t => t.Id == id).ToListAsync();
     }
 
+    public async Task<List<Ticket>> GetTicketsByUserId(int userId)
+    {
+        var user = await _context.Users.Include(u => u.Tickets).FirstOrDefaultAsync(u => u.Id == userId);
+        return user?.Tickets.ToList() ?? new List<Ticket>();
+        
+
+       
+        
+
+    }
+
 
     //#TODO ROZWINAC TICKET
     public async Task<Ticket> Update(Ticket ticket)

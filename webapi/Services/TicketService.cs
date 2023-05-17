@@ -28,6 +28,11 @@ public class TicketService : ITicketService
         return await _ticketRepository.GetTicketsByEventIdAsync(eventId);
     }
 
+    public async Task<List<Ticket>> GetTicketsByUserId(int id)
+    {
+        return await _ticketRepository.GetTicketsByUserId(id);
+    }
+
     public async Task CreateTicketAsync(Ticket ticket)
     {
         await _ticketRepository.AddTicketAsync(ticket);

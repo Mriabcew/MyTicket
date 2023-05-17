@@ -1,0 +1,13 @@
+img{
+    height: 100%;
+    width: 100%;
+}
+
+.text{
+    color:white;
+    font-size:10em;
+}
+.logo-container{
+    display: grid;
+    justify-items: center;
+}

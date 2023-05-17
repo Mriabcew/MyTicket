@@ -1,0 +1,17 @@
+.settings-menu{
+    justify-content: left;
+
+}
+
+button.btn-modal{
+width: 100%;
+}
+
+.main{
+    height: 100vh - 80px;
+}
+
+.container{
+    height: 100%;
+}
+

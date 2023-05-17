@@ -1,0 +1,12 @@
+.container{
+    display: grid;
+    justify-items: center;
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+h5.error{
+    position:fixed;
+    bottom: 5px;
+    color:red;
+}
