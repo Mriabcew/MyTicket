@@ -6,4 +6,7 @@
     grid-template-columns: repeat(2, 2fr);
     margin-bottom: 1em;
   }
- 
+
+  a{
+    display:block;
+  }

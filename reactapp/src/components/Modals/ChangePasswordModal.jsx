@@ -12,7 +12,7 @@ function ChangePasswordModal() {
     return (
         <>
             <button onClick={toggleModal} className="btn-modal">
-                change password
+                Change password
             </button>
 
             {modal && (
@@ -23,7 +23,7 @@ function ChangePasswordModal() {
                             <input name="passwordOld" type="password" placeholder="Old Password"/>
                             <input name="passwordNew" type="password" placeholder="New Password"/>
                             <input name="passwordNewRepeat" type="password" placeholder="Repeat New Password"/>
-                            <button className="submit" type="submit">Submit</button>
+                            <button className="modal-submit" type="submit">Submit</button>
                         </form>
 
                         <button className="close-modal" onClick={toggleModal}>

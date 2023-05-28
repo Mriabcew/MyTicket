@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { AiOutlineSetting } from 'react-icons/ai';
-import { BiLogOutCircle } from 'react-icons/bi';
+import { BiLogOutCircle,BiSearchAlt } from 'react-icons/bi';
 import { HiOutlineMenuAlt4 } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
 import { FaFacebook, FaInstagram, FaPinterest, FaTwitter, FaYoutube } from 'react-icons/fa';
@@ -8,12 +8,17 @@ import { FaFacebook, FaInstagram, FaPinterest, FaTwitter, FaYoutube } from 'reac
 import { Link } from 'react-router-dom';
 
 import './NavbarStyles.css';
+import Search from '../Search/Search';
 
 
 
 function Navbar() {
     const [nav, setNav] = useState(false)
+    const [darkMode, setDarkMode]= useState(false)
+    const [showSearchBar, setShowSearchBar] = useState(false);
+
     const handleNav = () => setNav(!nav)
+    const handleShowSearchBar = () => setShowSearchBar(!showSearchBar);
 
 return (
     <div name='home' className={nav ? 'navbar navbar-bg' : 'navbar'}>
@@ -29,7 +34,7 @@ return (
     </ul>
     <div className="nav-icons">
         <Link className='nav-link' to='/settings'><AiOutlineSetting className='icon' style={{ marginRight: '1rem' }} /></Link>
-        <Link className='nav-link' to='/settings'><BiLogOutCircle className='icon' /></Link>
+        <Link className='nav-link' to='/'><BiLogOutCircle className='icon' /></Link>
     </div>
     <div className="hamburger" onClick={handleNav}>
         {!nav ? (<HiOutlineMenuAlt4 className='icon' />) : (<AiOutlineClose style={{ color: '#000' }} className='icon' />)}

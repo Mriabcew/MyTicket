@@ -1,8 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using webapi.Data;
-using webapi.Interfaces;
-using webapi.Models;
+using MyTicket.DAL.Interfaces;
+using MyTicket.DTO;
+using MyTicket.Services.Interfaces;
+using MyTicket.Services.Services;
+
 
 namespace webapi.Controllers;
 [ApiController]
@@ -10,45 +11,33 @@ namespace webapi.Controllers;
 public class SecurityController : ControllerBase
 {
     
-    private readonly IUserRepository _userRepository;
+    private readonly IUserService _userService;
     
-    public SecurityController(IUserRepository userRepository)
+    public SecurityController(IUserService userService)
     {
-        _userRepository = userRepository;
+        _userService = userService;
     }
 
     [HttpPost]
     [Route("Register")]
-    public async Task<IActionResult> Register([FromBody] RegisterViewModel model)
+    public IActionResult Register([FromBody] RegisterDTO model)
     {
         if (!ModelState.IsValid)
         {
             return BadRequest(ModelState);
         }
-//#TODO NIE WIEM CZY TO PRAWIDLOWE
-        var user = new User
-        {
-            Username = model.Username,
-            Email = model.Email,
-            Password = BCrypt.Net.BCrypt.HashPassword(model.Password),
-            Name = "Not Set",
-            Gender = "NotDefined",
-            Surname = "Not Set",
-            Image = "reactapp/images/uploads/profileImages/defaultProfileImg.jpg"
-        };
-
-        await _userRepository.AddUserAsync(user);
+        _userService.AddNewUser(model);
 
         return Ok();
     }
-//#TODO OGARNAC KODY BLEDOW I PRZETLOMACZYC NA ANG
+    
     [HttpPost]
     [Route("Login")]
-    public async Task<IActionResult> Login([FromBody] LoginViewModel model)
+    public async Task<IActionResult> Login([FromBody] LoginDTO model)
     {
         var usernameOrEmail = model.UsernameOrEmail;
-        var user = await _userRepository.GetUserByUsernameOrEmail(usernameOrEmail);
-        if (user == null)
+        var user = await _userService.GetByEmailOrUsername(usernameOrEmail);
+        if (user is null)
         {
             return BadRequest("NIE ZNALEZIONO UŻYTKOWNIKA O PODANYM ADRESIE EMAIL LUB NAZWIE UZYTKOWNIKA");
         }

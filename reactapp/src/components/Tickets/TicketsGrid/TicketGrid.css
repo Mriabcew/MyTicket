@@ -1,0 +1,7 @@
+.Ticket-Grid{
+    margin-left: 5em;
+    margin-right: 5em;
+    gap:5em;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}

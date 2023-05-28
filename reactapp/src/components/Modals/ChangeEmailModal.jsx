@@ -12,18 +12,18 @@ function ChangeEmailModal() {
     return (
         <>
             <button onClick={toggleModal} className="btn-modal">
-                change email
+                Change email
             </button>
 
             {modal && (
                 <div className="modal">
                     <div onClick={toggleModal} className="overlay"></div>
                     <div className="modal-content">
-                        <form>
+                        <form className="modal-form">
                             <input name="OldEmail" type="text" placeholder="Old Email"/>
                             <input name="NewEmail" type="text" placeholder="New Email"/>
                             <input name="passwd" type="password" placeholder="Confirm with your password"/>
-                            <button className="submit" type="submit">Submit</button>
+                            <button className="modal-submit" type="submit">Submit</button>
                         </form>
 
                         <button className="close-modal" onClick={toggleModal}>

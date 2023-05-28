@@ -1,11 +1,42 @@
-td{
-    padding:1em;
-}
-
-th{
-    padding: 20px;
-}
-
-table{
+.Table {
+    width: 100%;
+    display: flex;
     justify-content: center;
-}
+  }
+  
+  .TicketsTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .TicketsTable th,
+  .TicketsTable td {
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .TicketsTable th {
+    background-color: #f2f2f2;
+  }
+  
+
+  @media screen and (max-width: 600px) {
+    .Table {
+        overflow-x: auto;
+      }
+      
+      .TicketsTable {
+        max-width: 200px;
+      }
+      
+      .TicketsTable th,
+      .TicketsTable td {
+        padding: 0.5em;
+        font-size: 14px;
+      }
+      
+      button[type="submit"] {
+        padding: 0.3em;
+        font-size: 14px;
+      }
+  }

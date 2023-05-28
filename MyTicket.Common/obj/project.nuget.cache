@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "GS0Myfr6+f6OtVcnP584nnH4OnlS3IbRpYmUX/LRHFCCO9dWFiE+yEW596rhnJy2FSscLn5x4ybjeMTW8mzkgA==",
+  "success": true,
+  "projectFilePath": "J:\\ZTPAI\\MyTicket\\MyTicket.Common\\MyTicket.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\thefo\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -42,3 +42,14 @@ J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\Npgsql.dll
 J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\System.CodeDom.dll
 J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\BCrypt.Net-Next.dll
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\MyTicket.Common.dll
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\MyTicket.DAL.dll
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\MyTicket.Domain.dll
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\MyTicket.DTO.dll
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\MyTicket.Services.dll
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\MyTicket.DAL.pdb
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\MyTicket.Services.pdb
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\MyTicket.Common.pdb
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\MyTicket.Domain.pdb
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\MyTicket.DTO.pdb
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\Newtonsoft.Json.dll

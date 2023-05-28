@@ -13,7 +13,7 @@ function ProfileData() {
 
   useEffect(() => {
     axios
-      .get('https://localhost:7027/user/12')
+      .get('https://localhost:7027/user/3')
       .then((response) => {
         setUserData({ user: response.data, isLoading: false, error: null });
       })
@@ -40,7 +40,7 @@ function ProfileData() {
   return (
     <div className='container'>
         <h1>{userData.user.username}</h1>
-        <h4>{userData.user.email}:</h4>
+        <h4>Emial: {userData.user.email}</h4>
         <h4>Name: {userData.user.name}</h4>
         <h4>Surname: {userData.user.surname}</h4>
     </div>

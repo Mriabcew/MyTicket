@@ -13,7 +13,7 @@ function CategoryGrid(props) {
       {console.log(categories)}
       {categories.map((category) => (
        
-       <CategoryTile category={category}><Link key={category.id} to={`/category/${category.title}`}></Link></CategoryTile>
+       <Link key={category.id} to={`/Tickets/${category.category}`}> <CategoryTile category={category}></CategoryTile></Link>
      
       ))}
     </div>

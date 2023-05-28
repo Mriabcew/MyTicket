@@ -12,7 +12,7 @@ function DeleteAccountModal() {
     return (
         <>
             <button onClick={toggleModal} className="btn-modal">
-                delete account
+                Delete account
             </button>
 
             {modal && (
@@ -22,7 +22,7 @@ function DeleteAccountModal() {
                         <h2>Are you sure you want to delete your account?</h2>
                         <form>
                         <input name="passwd" type="password" placeholder="Confirm with your password"/>
-                        <button className="submit" type="submit">Delete</button>
+                        <button className="modal-submit" type="submit">Delete</button>
                         </form>
                         <button className="close-modal" onClick={toggleModal}>
                             X

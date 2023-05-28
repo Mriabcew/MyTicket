@@ -1,8 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using webapi.Data;
-using webapi.Interfaces;
-using webapi.Models;
-using webapi.Repositories;
+using MyTicket.DAL.Interfaces;
+using MyTicket.DTO;
+using MyTicket.Services.Interfaces;
 
 namespace webapi.Controllers;
 [ApiController]
@@ -11,17 +10,17 @@ public class UserController : ControllerBase
 {
     private const int MaxFileSize = 2048 * 2048;
     private const string UploadDirectory = "/../reactapp/images/uploads/profileImages";
-    private readonly IUserRepository _userRepository;
+    private readonly IUserService _userService;
 
-    public UserController(IUserRepository userRepository)
+    public UserController(IUserService userService)
     {
-        _userRepository = userRepository;
+        _userService = userService;
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult<User>> GetUser(int id)
+    public async Task<ActionResult<UserDTO>> GetUser(int id)
     {
-        var user = await _userRepository.GetUserByIdAsync(id);
+        var user = await _userService.GetById(id);
         if (user == null)
         {
             return NotFound();

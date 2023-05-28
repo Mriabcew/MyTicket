@@ -9,10 +9,11 @@ function RegisterForm() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [password2, setPassword2] = useState('');
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        if(!name || !email || !password) {
+        if(!name || !email || !password || !password2) {
             alert("Wypełnij wszystkie pola formularza");
             return;
         }
@@ -26,11 +27,13 @@ function RegisterForm() {
         const data = {
             email: email,
             password: password,
-            name: name,
+            username: name
         };
+
         console.log(data);
+        
         try {
-            const response = await axios.post("https://localhost:7027/api/User", data);
+            const response = await axios.post("https://localhost:7027/Security/Register", data);
             if (response.status === 200) {
                 alert("Rejestracja zakończona sukcesem.");
             } else {
@@ -57,7 +60,12 @@ function RegisterForm() {
             Hasło:
         </label>    
         <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-      
+    
+        <label>
+            Powtórz Hasło:
+        </label>    
+        <input type="password" value={password2} onChange={(e) => setPassword2(e.target.value)} />
+
         <button type="submit">Rejstracja</button>
         <label>
              <a href="/">Masz konto zaloguj sie</a>

@@ -23,3 +23,23 @@ abbr{
 {
     background-color:gray;
 }
+
+.ModalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65); /* Przezroczysty czarny kolor tła */
+    z-index: 999; /* Aby warstwa była na wierzchu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .ModalContent {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(255, 255, 255) !important;
+  }

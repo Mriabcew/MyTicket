@@ -1,0 +1,12 @@
+J:\ZTPAI\MyTicket\MyTicket.Domain\bin\Debug\net7.0\MyTicket.Domain.deps.json
+J:\ZTPAI\MyTicket\MyTicket.Domain\bin\Debug\net7.0\MyTicket.Domain.dll
+J:\ZTPAI\MyTicket\MyTicket.Domain\bin\Debug\net7.0\MyTicket.Domain.pdb
+J:\ZTPAI\MyTicket\MyTicket.Domain\obj\Debug\net7.0\MyTicket.Domain.csproj.AssemblyReference.cache
+J:\ZTPAI\MyTicket\MyTicket.Domain\obj\Debug\net7.0\MyTicket.Domain.GeneratedMSBuildEditorConfig.editorconfig
+J:\ZTPAI\MyTicket\MyTicket.Domain\obj\Debug\net7.0\MyTicket.Domain.AssemblyInfoInputs.cache
+J:\ZTPAI\MyTicket\MyTicket.Domain\obj\Debug\net7.0\MyTicket.Domain.AssemblyInfo.cs
+J:\ZTPAI\MyTicket\MyTicket.Domain\obj\Debug\net7.0\MyTicket.Domain.csproj.CoreCompileInputs.cache
+J:\ZTPAI\MyTicket\MyTicket.Domain\obj\Debug\net7.0\MyTicket.Domain.dll
+J:\ZTPAI\MyTicket\MyTicket.Domain\obj\Debug\net7.0\refint\MyTicket.Domain.dll
+J:\ZTPAI\MyTicket\MyTicket.Domain\obj\Debug\net7.0\MyTicket.Domain.pdb
+J:\ZTPAI\MyTicket\MyTicket.Domain\obj\Debug\net7.0\ref\MyTicket.Domain.dll

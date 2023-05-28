@@ -1,0 +1,17 @@
+J:\ZTPAI\MyTicket\MyTicket.DAL\obj\Debug\net7.0\MyTicket.DAL.csproj.AssemblyReference.cache
+J:\ZTPAI\MyTicket\MyTicket.DAL\obj\Debug\net7.0\MyTicket.DAL.GeneratedMSBuildEditorConfig.editorconfig
+J:\ZTPAI\MyTicket\MyTicket.DAL\obj\Debug\net7.0\MyTicket.DAL.AssemblyInfoInputs.cache
+J:\ZTPAI\MyTicket\MyTicket.DAL\obj\Debug\net7.0\MyTicket.DAL.AssemblyInfo.cs
+J:\ZTPAI\MyTicket\MyTicket.DAL\obj\Debug\net7.0\MyTicket.DAL.csproj.CoreCompileInputs.cache
+J:\ZTPAI\MyTicket\MyTicket.DAL\bin\Debug\net7.0\MyTicket.DAL.deps.json
+J:\ZTPAI\MyTicket\MyTicket.DAL\bin\Debug\net7.0\MyTicket.DAL.dll
+J:\ZTPAI\MyTicket\MyTicket.DAL\bin\Debug\net7.0\MyTicket.DAL.pdb
+J:\ZTPAI\MyTicket\MyTicket.DAL\bin\Debug\net7.0\MyTicket.Domain.dll
+J:\ZTPAI\MyTicket\MyTicket.DAL\bin\Debug\net7.0\MyTicket.DTO.dll
+J:\ZTPAI\MyTicket\MyTicket.DAL\bin\Debug\net7.0\MyTicket.Domain.pdb
+J:\ZTPAI\MyTicket\MyTicket.DAL\bin\Debug\net7.0\MyTicket.DTO.pdb
+J:\ZTPAI\MyTicket\MyTicket.DAL\obj\Debug\net7.0\MyTicket.DAL.csproj.CopyComplete
+J:\ZTPAI\MyTicket\MyTicket.DAL\obj\Debug\net7.0\MyTicket.DAL.dll
+J:\ZTPAI\MyTicket\MyTicket.DAL\obj\Debug\net7.0\refint\MyTicket.DAL.dll
+J:\ZTPAI\MyTicket\MyTicket.DAL\obj\Debug\net7.0\MyTicket.DAL.pdb
+J:\ZTPAI\MyTicket\MyTicket.DAL\obj\Debug\net7.0\ref\MyTicket.DAL.dll

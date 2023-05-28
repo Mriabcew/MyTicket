@@ -1,12 +1,9 @@
-import React from 'react'
-
+import React from 'react';
 import RegisterForm from '../components/RegisterForm/RegisterForm';
+import './LoginPageStyles.css';
 import Logo from '../components/Logo/Logo';
 
-import './LoginPageStyles.css';
-
-
-function RegisterPage() {
+function LoginPage() {
   return (
     <div className='login-container'>
       <div className='login-form'>
@@ -14,7 +11,7 @@ function RegisterPage() {
       </div>
       <div className='logo'><Logo/></div>
     </div>
-    )
+  )
 }
 
-export default RegisterPage
+export default LoginPage

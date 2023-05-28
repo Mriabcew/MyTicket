@@ -1,0 +1,29 @@
+.TicketData {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    columns: 150px 2;
+  }
+
+img.image{
+    border-radius: 15px;
+    border: 5px solid black;
+    width: 100%;
+    height: 100%;
+  }
+
+.desc{
+
+}
+
+.button-section{
+    display: flex;
+    justify-content: center;
+    margin:0;
+  }
+
+.column {
+    padding: 2em 2em 0 2em;
+    display: grid;
+    flex: 1;
+}

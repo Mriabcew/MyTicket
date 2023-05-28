@@ -1,25 +1,24 @@
 using Microsoft.AspNetCore.Mvc;
-using webapi.Interfaces;
-using webapi.Models;
-using webapi.Repositories;
+using MyTicket.DTO;
+using MyTicket.Services.Interfaces;
 
 namespace webapi.Controllers;
 [ApiController]
 [Route("/[controller]")]
 public class TicketController: ControllerBase
 {
-    private readonly ITicketRepository _ticketReposiotry;
+    private readonly ITicketService _ticketService;
     
-    public TicketController(ITicketRepository ticketReposiotry)
+    public TicketController(ITicketService ticketService)
     {
-        _ticketReposiotry = ticketReposiotry;
+        _ticketService = ticketService;
     }
 
     [HttpGet]
     [Route("{id}")]
-    public async Task<List<Ticket>> GetTicketsByUserId(int id)
+    public async Task<List<TicketDTO>> GetTicketsByUserId(int id)
     {
-        return await _ticketReposiotry.GetTicketsByUserId(id);
+        return await _ticketService.GetTicketsByUserId(id);
     }
 
 }

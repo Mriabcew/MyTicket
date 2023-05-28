@@ -7,6 +7,16 @@ Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "reactapp", "reactapp\reacta
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "webapi", "webapi\webapi.csproj", "{12D88435-3383-442D-A236-597D4996FA9B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTicket.DAL", "MyTicket.DAL\MyTicket.DAL.csproj", "{131C03FA-6424-4C9E-8750-A3B43940FB17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTicket.Domain", "MyTicket.Domain\MyTicket.Domain.csproj", "{C8B53666-5A26-45E6-8B1D-F289AF87AC1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTicket.Services", "MyTicket.Services\MyTicket.Services.csproj", "{D82D2821-8308-4390-9DB6-ABFC85CED645}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTicket.Common", "MyTicket.Common\MyTicket.Common.csproj", "{734F86DF-B3C1-4912-9A9C-5C0F5EB062D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTicket.DTO", "MyTicket.DTO\MyTicket.DTO.csproj", "{7B62AEF7-F92F-4B57-A3CD-0D28E5CDEC01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +34,26 @@ Global
 		{12D88435-3383-442D-A236-597D4996FA9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12D88435-3383-442D-A236-597D4996FA9B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{12D88435-3383-442D-A236-597D4996FA9B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{131C03FA-6424-4C9E-8750-A3B43940FB17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{131C03FA-6424-4C9E-8750-A3B43940FB17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{131C03FA-6424-4C9E-8750-A3B43940FB17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{131C03FA-6424-4C9E-8750-A3B43940FB17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8B53666-5A26-45E6-8B1D-F289AF87AC1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8B53666-5A26-45E6-8B1D-F289AF87AC1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8B53666-5A26-45E6-8B1D-F289AF87AC1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8B53666-5A26-45E6-8B1D-F289AF87AC1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D82D2821-8308-4390-9DB6-ABFC85CED645}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D82D2821-8308-4390-9DB6-ABFC85CED645}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D82D2821-8308-4390-9DB6-ABFC85CED645}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D82D2821-8308-4390-9DB6-ABFC85CED645}.Release|Any CPU.Build.0 = Release|Any CPU
+		{734F86DF-B3C1-4912-9A9C-5C0F5EB062D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{734F86DF-B3C1-4912-9A9C-5C0F5EB062D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{734F86DF-B3C1-4912-9A9C-5C0F5EB062D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{734F86DF-B3C1-4912-9A9C-5C0F5EB062D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B62AEF7-F92F-4B57-A3CD-0D28E5CDEC01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B62AEF7-F92F-4B57-A3CD-0D28E5CDEC01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B62AEF7-F92F-4B57-A3CD-0D28E5CDEC01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B62AEF7-F92F-4B57-A3CD-0D28E5CDEC01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
