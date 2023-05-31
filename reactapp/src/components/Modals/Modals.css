@@ -15,11 +15,17 @@
   align-items: center;
   }
   
+
   .modal-content {
     display: grid;
     width: 400px;
-    height: 400px;
+    height: 450px;
     background-color: rgb(255, 255, 255) !important;
+  }
+    .message{
+      display:flex;
+      justify-content: center;
+    color:black;
   }
   
   .modal-title {
@@ -60,4 +66,12 @@
   .modal-button:hover {
     background-color: #222222;
   }
-  
+
+  .gender-buttons{
+  display: flex;
+  }
+  .gender-buttons label{
+    color:black;
+    display: flex;
+    align-items: center;
+  }

@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import './Modals.css';
-
+import axios from "axios";
 
 function ChangeProfileImg() {
     const [modal, setModal] = useState(false);
+    const [imgString,setImgString] = useState("");
+    const [Message, setMessage] = useState('');
 
     const toggleModal = () => {
         setModal(!modal);
@@ -16,7 +18,28 @@ function ChangeProfileImg() {
   }
 
   const handleSaveClick = () => {
-  };
+    const formData = new FormData();
+    formData.append("file",selectedImage);
+    formData.append("upload_preset","ei0tlz1v");
+
+    axios.post(
+      "https://api.cloudinary.com/v1_1/dlhfvkqas/image/upload",
+      formData
+    )
+      .then((response) => {
+        setImgString(response.data.url);
+      }); 
+    try{
+      axios.post(`https://localhost:7027/Security/ProfileImage?cloudinaryString=${imgString}&id=${localStorage.id}`)
+      .then((response) => {
+        setMessage(response.data);
+      });
+    }
+    catch(error){
+      console.error(error);
+      setMessage("Wystąpił błąd podczas zmiany zdjecia: " + error.message);
+    }
+    };
 
     return (
         <>
@@ -27,10 +50,9 @@ function ChangeProfileImg() {
             {modal && (
                 <div className="modal">
                 <div className="modal-content">
-                  <h2>Change Profile Photo</h2>
                   <input type="file" accept="image/*" onChange={handleImageChange} />
                   <button className='modal-submit' onClick={handleSaveClick}>Submit</button>
-                  <button className="close-modal" onClick={toggleModal}>X</button>
+                  {Message && <div className="message">{Message}</div>}
                 </div>
               </div>
             )}

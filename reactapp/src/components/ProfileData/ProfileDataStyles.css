@@ -1,8 +1,13 @@
 .container{
     display: grid;
     justify-items: center;
-    background-color: whitesmoke;
+    background-color: black;
     width: 100%;
+    color:whitesmoke;
+    width: 56%;
+    position: relative;
+    height: 30vh;
+    bottom: 0;
 }
 
 h5.error{
@@ -10,3 +15,15 @@ h5.error{
     bottom: 5px;
     color:red;
 }
+
+
+@media screen and (max-width: 600px) {
+    .container{
+        position: inherit;
+    }
+    
+    .background-image {
+        background-size: cover;
+      }
+    
+    }

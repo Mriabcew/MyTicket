@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using MyTicket.DAL.Interfaces;
 using MyTicket.Domain;
+using MyTicket.DTO;
 
 
 namespace MyTicket.DAL.Repositories;
@@ -13,17 +14,7 @@ public class UserRepository : Repository, IUserRepository
 
     public async Task AddUserAsync(User user)
     {
-        var userEntry = new User
-        {
-            Username = user.Username,
-            Email = user.Email,
-            Password = BCrypt.Net.BCrypt.HashPassword(user.Password),
-            Name = "Not Set",
-            Gender = "NotDefined",
-            Surname = "Not Set",
-            Image = "reactapp/images/uploads/profileImages/defaultProfileImg.jpg"
-        };
-        await _context.Users.AddAsync(userEntry);
+        await _context.Users.AddAsync(user);
         await _context.SaveChangesAsync();
     }
 
@@ -57,7 +48,7 @@ public class UserRepository : Repository, IUserRepository
         await _context.SaveChangesAsync();
         return userToUpdate;
     }
-
+    
     public async Task<bool> Delete(User user)
     {
         var userToDelete = await _context.Users.FindAsync(user.Id);
@@ -70,7 +61,53 @@ public class UserRepository : Repository, IUserRepository
         await _context.SaveChangesAsync();
         return true;
     }
+
+    public async Task AddEventToUser(EventDTO @event, int UserId)
+    {
+        @event.UserId = UserId;
+        var eventToAdd = new Event()
+        {
+            Date = @event.Date,
+            Description = @event.Description,
+            TicketMasterId = @event.TicketMasterId,
+            Id = @event.Id,
+            Name = @event.Name,
+            Url = @event.ImageUrl,
+            UserId = @event.UserId,
+            Type = @event.Type
+
+        };
+        await _context.Events.AddAsync(eventToAdd);
+        await _context.SaveChangesAsync();
+    }
+
+    public async Task ChangeImageString(User user, string newImageString)
+    {
+        var userToChange = await _context.Users.FirstOrDefaultAsync(u => u.Id == user.Id);
     
+        if (userToChange != null)
+        {
+            userToChange.Image = newImageString;
+            
+            _context.Users.Update(userToChange);
+            await _context.SaveChangesAsync();
+        }
+
+    }
+
+    public async Task uploadBackgroundImage(User user, string cloudinary)
+    {
+        var userToChange = await _context.Users.FirstOrDefaultAsync(u => u.Id == user.Id);
+    
+        if (userToChange != null)
+        {
+            userToChange.BackgroundImage = cloudinary;
+            
+            _context.Users.Update(userToChange);
+            await _context.SaveChangesAsync();
+        }
+    }
+
     public async Task<User> GetUserByUsernameOrEmail(string usernameOrEmail)
     {
         return await _context.Users

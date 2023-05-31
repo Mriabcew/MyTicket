@@ -16,20 +16,30 @@
 .main{
     margin: 0 10em 0 10em;
 }
-
-.background {
-    position: relative;
-    /* Inne style tła, jak np. kolor tła */
-  }
+.backgroundImg{
+  height: calc(100vh - 85px);
+  position: absolute;
+  z-index: -1;
+}
   
   .background-image {
-    position: relative;
+    /*position: relative;*/
     background-size: cover;
   }
   
 @media screen and (max-width: 600px) {
 .container{
     width: auto;
+}
+
+.background-image {
+    background-size: cover;
+  }
+
+  .main{
+    display: grid;
+    justify-content: center;
+    margin: 0 0 0 0;
 }
 
 

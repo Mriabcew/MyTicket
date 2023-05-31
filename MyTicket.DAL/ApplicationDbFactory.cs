@@ -8,18 +8,18 @@ public class ApplicationDbFactory: IDesignTimeDbContextFactory<ApplicationDbCont
 {
 
     public ApplicationDbFactory()
-        {
+    {
 
-        }
-        public ApplicationDbContext CreateDbContext(string[] args)
-        {
-            IConfigurationRoot configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile(Directory.GetCurrentDirectory() + "../../webapi/appsettings.json").Build();
+    }
+        
+    public ApplicationDbContext CreateDbContext(string[] args)
+    {
+        IConfigurationRoot configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile(Directory.GetCurrentDirectory() + "../../webapi/appsettings.json").Build();
 
-            var builder = new DbContextOptionsBuilder<ApplicationDbContext>();
-            var connectionString = configuration.GetConnectionString("MyTicket");
-            builder.UseNpgsql(connectionString);
+        var builder = new DbContextOptionsBuilder<ApplicationDbContext>();
+        var connectionString = configuration.GetConnectionString("MyTicket");
+        builder.UseNpgsql(connectionString);
 
-            return new ApplicationDbContext(builder.Options);
-        } 
+        return new ApplicationDbContext(builder.Options);
+    } 
 }
-

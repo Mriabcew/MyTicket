@@ -11,13 +11,17 @@ function TicketsCatalog() {
   const [biletyKategorii, setBiletyKategorii] = useState([]);
 
   useEffect(() => {
-    // Wywołanie funkcji pobierającej bilety z danego endpointu
     fetchBiletyKategorii();
   }, []);
 
   const fetchBiletyKategorii = async () => {
     try {
-      const response = await fetch(`https://localhost:7027/${category}`);
+      const response = await fetch(`https://localhost:7027/${category}`,{
+        headers:{
+          'Content-Type': 'application/json',
+          Authorization: 'Bearer ' + localStorage.getItem('token')
+        }
+      });
       const data = await response.json();
       setBiletyKategorii(data);
     } catch (error) {

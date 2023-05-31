@@ -5,3 +5,13 @@
     display: grid;
     grid-template-columns: 2fr 2fr;
 }
+
+@media screen and (max-width: 600px) {
+    .Ticket-Grid{
+    margin-left: 0;
+    margin-right: 0;
+    gap:25px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+}

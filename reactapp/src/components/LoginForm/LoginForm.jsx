@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
-import Cookies from "js-cookie";
 import axios from "axios";
 
 import "./LoginFormStyles.css";
@@ -22,7 +21,8 @@ function LoginForm() {
         password: password,
       })
       .then((response) => {
-        console.log(response.data);
+        localStorage.setItem('token',response.data.token);
+        localStorage.setItem('id',response.data.id);
         navigate('/home');
       })
       .catch((error) => {

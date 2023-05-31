@@ -1,5 +1,13 @@
-img.profile{
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
+.image{
+    border:solid black;
+}
+
+
+@media screen and (max-width: 600px)
+{
+    .profileImg{
+        width: 300px;
+        height: 300px;
+        
+    }
 }

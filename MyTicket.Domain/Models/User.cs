@@ -1,7 +1,6 @@
 using System.ComponentModel.DataAnnotations;
-
 namespace MyTicket.Domain;
-//SKONCZONE
+
 public class User
 {
     
@@ -16,6 +15,7 @@ public class User
     public string Surname { get; set; }
     public string Gender { get; set; }
     public string Image { get; set; }
+    public string BackgroundImage { get; set; }
     
-    public ICollection<Ticket> Tickets { get; set; }
+    public List<Event> EventsList { get; set; }
 }

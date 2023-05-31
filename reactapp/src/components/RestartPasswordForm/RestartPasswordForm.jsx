@@ -23,7 +23,6 @@ function RestartPasswordForm() {
         };
         console.log(data);
         try {
-            //#TODO cos dorobic
         }
         catch(ex)
         {

@@ -30,7 +30,8 @@ public static class UserConverter
             Name = user.Name,
             Password = user.Password,
             Surname = user.Surname,
-            Username = user.Username
+            Username = user.Username,
+            BackgroundImage = user.BackgroundImage
         };
     }
     

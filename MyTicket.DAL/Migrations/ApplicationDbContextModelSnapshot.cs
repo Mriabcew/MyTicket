@@ -37,18 +37,13 @@ namespace MyTicket.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<TimeSpan>("Duration")
-                        .HasColumnType("interval");
-
-                    b.Property<int?>("LocationId")
-                        .HasColumnType("integer");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<TimeOnly>("Time")
-                        .HasColumnType("time without time zone");
+                    b.Property<string>("TicketMasterId")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<string>("Type")
                         .IsRequired()
@@ -58,88 +53,14 @@ namespace MyTicket.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.HasKey("Id");
-
-                    b.HasIndex("LocationId");
-
-                    b.ToTable("Events");
-                });
-
-            modelBuilder.Entity("MyTicket.Domain.Location", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
+                    b.Property<int>("UserId")
                         .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("City")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Countr")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Street")
-                        .IsRequired()
-                        .HasColumnType("text");
 
                     b.HasKey("Id");
-
-                    b.ToTable("Locations");
-                });
-
-            modelBuilder.Entity("MyTicket.Domain.Ticket", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<int?>("EventId")
-                        .HasColumnType("integer");
-
-                    b.Property<DateTime>("PurchaseDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("QRCode")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Row")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<int>("SeatNumber")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("Sector")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<int?>("UserId")
-                        .HasColumnType("integer");
-
-                    b.Property<decimal>("price")
-                        .HasColumnType("numeric");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("EventId");
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Tickets");
+                    b.ToTable("Events");
                 });
 
             modelBuilder.Entity("MyTicket.Domain.User", b =>
@@ -149,6 +70,10 @@ namespace MyTicket.DAL.Migrations
                         .HasColumnType("integer");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("BackgroundImage")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -185,35 +110,16 @@ namespace MyTicket.DAL.Migrations
 
             modelBuilder.Entity("MyTicket.Domain.Event", b =>
                 {
-                    b.HasOne("MyTicket.Domain.Location", null)
-                        .WithMany("Events")
-                        .HasForeignKey("LocationId");
-                });
-
-            modelBuilder.Entity("MyTicket.Domain.Ticket", b =>
-                {
-                    b.HasOne("MyTicket.Domain.Event", null)
-                        .WithMany("Tickets")
-                        .HasForeignKey("EventId");
-
                     b.HasOne("MyTicket.Domain.User", null)
-                        .WithMany("Tickets")
-                        .HasForeignKey("UserId");
-                });
-
-            modelBuilder.Entity("MyTicket.Domain.Event", b =>
-                {
-                    b.Navigation("Tickets");
-                });
-
-            modelBuilder.Entity("MyTicket.Domain.Location", b =>
-                {
-                    b.Navigation("Events");
+                        .WithMany("EventsList")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("MyTicket.Domain.User", b =>
                 {
-                    b.Navigation("Tickets");
+                    b.Navigation("EventsList");
                 });
 #pragma warning restore 612, 618
         }

@@ -10,5 +10,6 @@ public class UserDTO
     public string Surname { get; set; }
     public string Gender { get; set; }
     public string Image { get; set; }
+    public string BackgroundImage { get; set; }
 
 }

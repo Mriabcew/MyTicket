@@ -13,7 +13,7 @@ function ProfileData() {
 
   useEffect(() => {
     axios
-      .get('https://localhost:7027/user/3')
+      .get(`https://localhost:7027/user/${localStorage.id}`)
       .then((response) => {
         setUserData({ user: response.data, isLoading: false, error: null });
       })

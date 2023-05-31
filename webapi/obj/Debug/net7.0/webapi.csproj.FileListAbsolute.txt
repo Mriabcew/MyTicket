@@ -53,3 +53,12 @@ J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\MyTicket.Common.pdb
 J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\MyTicket.Domain.pdb
 J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\MyTicket.DTO.pdb
 J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\Newtonsoft.Json.dll
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\CloudinaryDotNet.dll
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+J:\ZTPAI\MyTicket\webapi\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll

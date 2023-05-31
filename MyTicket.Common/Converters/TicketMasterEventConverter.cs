@@ -10,10 +10,12 @@ public static class TicketMasterEventConverter
         return new EventDTO()
         {
             Date = DateOnly.FromDateTime(@event.dates.start.dateTime.Date),
-            Description = "empty",
-            Id = @event.id,
+            Description = string.IsNullOrEmpty(@event.info) ? "No information aviable" : @event.info,
+            TicketMasterId = @event.id,
             Name = @event.name,
-            ImageUrl = @event.images.FirstOrDefault(i=>i.width>1000).url
+            ImageUrl = @event.images.FirstOrDefault(i=>i.width>1000).url,
+            Type = @event.type,
+
         };
     }
 

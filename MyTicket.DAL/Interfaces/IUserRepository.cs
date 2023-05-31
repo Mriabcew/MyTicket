@@ -1,4 +1,5 @@
 using MyTicket.Domain;
+using MyTicket.DTO;
 
 namespace MyTicket.DAL.Interfaces;
 
@@ -15,4 +16,8 @@ public interface IUserRepository
     Task<User> Update(User user);
 
     Task<bool> Delete(User user);
+    Task AddEventToUser(EventDTO @event, int id);
+
+    Task ChangeImageString(User user, string newImageString);
+    Task uploadBackgroundImage(User user, string cloudinary);
 }

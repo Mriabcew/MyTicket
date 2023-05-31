@@ -2,14 +2,19 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Navbar from '../components/Navbar/Navbar';
 import './TicketsPageStyles.css';
+import { Link } from 'react-router-dom';
 
 function MyTicketPage(props) {
   const [tickets, setTickets] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
-      const response = await axios.get('https://localhost:7027/Ticket/12');
-      setTickets(response.data);
+      try {
+        const response = await axios.get(`https://localhost:7027/Events/MyTickets/${localStorage.id}`);
+        setTickets(response.data);
+      } catch (error) {
+        console.error(error);
+      }
     }
 
     fetchData();
@@ -22,25 +27,22 @@ function MyTicketPage(props) {
         <table className='TicketsTable'>
           <thead>
             <tr>
-              <th>Data zakupu</th>
-              <th>Cena</th>
-              <th>Numer miejsca</th>
-              <th>Rząd</th>
-              <th>Sektor</th>
-              <th>Status</th>
-              <th>Kod QR</th>
+              <th className='photo'>Zdjecie</th>
+              <th>Nazwa</th>
+              <th>Data</th>
+             
+              <th>Przejdz do wydarzenia</th>
             </tr>
           </thead>
           <tbody>
             {tickets.map(ticket => (
               <tr key={ticket.id}>
-                <td>{ticket.purchaseDate}</td>
-                <td>{ticket.price}</td>
-                <td>{ticket.seatNumber}</td>
-                <td>{ticket.row}</td>
-                <td>{ticket.sector}</td>
-                <td>{ticket.status}</td>
-                <td><button type="submit">Generuj kod QR</button></td>
+                <td className='photo'><img className='Image' src={ticket.imageUrl}></img></td>
+                <td className='Text'>{ticket.name}</td>
+                <td className='Text'>{ticket.date}</td>
+                <td> <Link to={`/mytickets/${ticket.ticketMasterId}`}><button className='GoTo'>
+                    Przejdź do wydarzenia</button>
+                  </Link></td>
               </tr>
             ))}
           </tbody>

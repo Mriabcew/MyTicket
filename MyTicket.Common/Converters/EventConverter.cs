@@ -9,23 +9,22 @@ public static class EventConverter
     {
         return new Event()
         {
+            Id = dto.Id,
             Date = dto.Date,
             Description = dto.Description,
-            Id = dto.Id,
+            TicketMasterId = dto.TicketMasterId,
             Name = dto.Name
         };
     }
-//#todo poprawic
-    public static EventDTO ToDTO(this MyTicket.DTO.TicketMasterResponses.Event @event)
+    public static EventDTO ToDTO(this Event @event)
     {
         return new EventDTO()
         {
-            Date = DateOnly.FromDateTime(@event.dates.start.dateTime),
-            Id = @event.id,
-            Description = "empty",
-            Name = @event.name,
-            ImageUrl = "aaa"
-            //@event.images[0].url
+            Date = @event.Date,
+            Id = @event.Id,
+            Description = @event.Description,
+            Name = @event.Name,
+            ImageUrl = @event.Url
         };
     }
 }

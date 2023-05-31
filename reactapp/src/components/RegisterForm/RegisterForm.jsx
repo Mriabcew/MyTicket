@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
 
 import './RegisterFormStyles.css';
 
 function RegisterForm() {
-
+    const navigate = useNavigate();
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -36,6 +36,7 @@ function RegisterForm() {
             const response = await axios.post("https://localhost:7027/Security/Register", data);
             if (response.status === 200) {
                 alert("Rejestracja zakończona sukcesem.");
+                navigate('/');
             } else {
                 alert("Wystąpił błąd podczas rejestracji.");
             }

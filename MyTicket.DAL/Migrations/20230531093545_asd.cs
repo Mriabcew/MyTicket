@@ -5,18 +5,25 @@
 namespace MyTicket.DAL.Migrations
 {
     /// <inheritdoc />
-    public partial class Init : Migration
+    public partial class asd : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-
+            migrationBuilder.AddColumn<string>(
+                name: "BackgroundImage",
+                table: "Users",
+                type: "text",
+                nullable: false,
+                defaultValue: "");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-
+            migrationBuilder.DropColumn(
+                name: "BackgroundImage",
+                table: "Users");
         }
     }
 }

@@ -13,12 +13,17 @@ import Search from '../Search/Search';
 
 
 function Navbar() {
-    const [nav, setNav] = useState(false)
-    const [darkMode, setDarkMode]= useState(false)
+    const [nav, setNav] = useState(false);
+    const [darkMode, setDarkMode]= useState(false);
     const [showSearchBar, setShowSearchBar] = useState(false);
 
-    const handleNav = () => setNav(!nav)
+    const handleNav = () => setNav(!nav);
     const handleShowSearchBar = () => setShowSearchBar(!showSearchBar);
+
+    const handleLogout = () => {
+        localStorage.clear();
+      };
+    
 
 return (
     <div name='home' className={nav ? 'navbar navbar-bg' : 'navbar'}>
@@ -34,7 +39,7 @@ return (
     </ul>
     <div className="nav-icons">
         <Link className='nav-link' to='/settings'><AiOutlineSetting className='icon' style={{ marginRight: '1rem' }} /></Link>
-        <Link className='nav-link' to='/'><BiLogOutCircle className='icon' /></Link>
+        <Link className='nav-link' to='/'><BiLogOutCircle className='icon' onClick={handleLogout}/></Link>
     </div>
     <div className="hamburger" onClick={handleNav}>
         {!nav ? (<HiOutlineMenuAlt4 className='icon' />) : (<AiOutlineClose style={{ color: '#000' }} className='icon' />)}
@@ -52,7 +57,7 @@ return (
         <div className="mobile-menu-bottom">
             <div className="menu-icons">
                 <Link to='/settings'><button> Settings</button></Link>
-                <Link to='/'><button>Logout</button></Link>
+                <Link to='/'><button onClick={handleLogout}>Logout</button></Link>
             </div>
             <div className="social-icons">
                 <FaFacebook className='icon' />

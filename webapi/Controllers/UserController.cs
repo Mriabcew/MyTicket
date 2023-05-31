@@ -8,8 +8,6 @@ namespace webapi.Controllers;
 [Route("/[controller]")]
 public class UserController : ControllerBase
 {
-    private const int MaxFileSize = 2048 * 2048;
-    private const string UploadDirectory = "/../reactapp/images/uploads/profileImages";
     private readonly IUserService _userService;
 
     public UserController(IUserService userService)
@@ -28,5 +26,6 @@ public class UserController : ControllerBase
 
         return user;
     }
+    
     
 }

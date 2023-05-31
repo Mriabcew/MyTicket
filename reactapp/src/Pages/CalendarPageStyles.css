@@ -39,7 +39,23 @@ abbr{
   
   
   .ModalContent {
-    width: 400px;
+    width: 450px;
     height: 400px;
     background-color: rgb(255, 255, 255) !important;
+  }
+
+  .ModalContent h3{
+   padding: 0 0 0 1em;
+  }
+
+  .ModalContent h4{
+    padding: 0 0 0 1em;
+   }
+
+.goto{
+    margin-left: 1em;
+}
+
+  .close{
+    width: 100%;
   }
