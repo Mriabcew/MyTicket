@@ -24,7 +24,7 @@ internal class Program
         builder.Services.AddScoped<IUserRepository, UserRepository>();
         builder.Services.AddScoped<IEventReposiory, EventRepository>();
         builder.Services.AddScoped<IEventReposiory, EventRepository>();
-        
+        builder.Services.AddScoped<IUserService, UserService>();
         
 
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

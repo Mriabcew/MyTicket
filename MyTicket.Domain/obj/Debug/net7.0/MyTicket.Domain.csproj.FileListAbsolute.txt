@@ -10,3 +10,15 @@ J:\ZTPAI\MyTicket\MyTicket.Domain\obj\Debug\net7.0\MyTicket.Domain.dll
 J:\ZTPAI\MyTicket\MyTicket.Domain\obj\Debug\net7.0\refint\MyTicket.Domain.dll
 J:\ZTPAI\MyTicket\MyTicket.Domain\obj\Debug\net7.0\MyTicket.Domain.pdb
 J:\ZTPAI\MyTicket\MyTicket.Domain\obj\Debug\net7.0\ref\MyTicket.Domain.dll
+C:\Users\thefo\RiderProjects\MyTicket\MyTicket.Domain\bin\Debug\net7.0\MyTicket.Domain.deps.json
+C:\Users\thefo\RiderProjects\MyTicket\MyTicket.Domain\bin\Debug\net7.0\MyTicket.Domain.dll
+C:\Users\thefo\RiderProjects\MyTicket\MyTicket.Domain\bin\Debug\net7.0\MyTicket.Domain.pdb
+C:\Users\thefo\RiderProjects\MyTicket\MyTicket.Domain\obj\Debug\net7.0\MyTicket.Domain.csproj.AssemblyReference.cache
+C:\Users\thefo\RiderProjects\MyTicket\MyTicket.Domain\obj\Debug\net7.0\MyTicket.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thefo\RiderProjects\MyTicket\MyTicket.Domain\obj\Debug\net7.0\MyTicket.Domain.AssemblyInfoInputs.cache
+C:\Users\thefo\RiderProjects\MyTicket\MyTicket.Domain\obj\Debug\net7.0\MyTicket.Domain.AssemblyInfo.cs
+C:\Users\thefo\RiderProjects\MyTicket\MyTicket.Domain\obj\Debug\net7.0\MyTicket.Domain.csproj.CoreCompileInputs.cache
+C:\Users\thefo\RiderProjects\MyTicket\MyTicket.Domain\obj\Debug\net7.0\MyTicket.Domain.dll
+C:\Users\thefo\RiderProjects\MyTicket\MyTicket.Domain\obj\Debug\net7.0\refint\MyTicket.Domain.dll
+C:\Users\thefo\RiderProjects\MyTicket\MyTicket.Domain\obj\Debug\net7.0\MyTicket.Domain.pdb
+C:\Users\thefo\RiderProjects\MyTicket\MyTicket.Domain\obj\Debug\net7.0\ref\MyTicket.Domain.dll

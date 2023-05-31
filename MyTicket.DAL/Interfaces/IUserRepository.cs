@@ -19,5 +19,5 @@ public interface IUserRepository
     Task AddEventToUser(EventDTO @event, int id);
 
     Task ChangeImageString(User user, string newImageString);
-    Task uploadBackgroundImage(User user, string cloudinary);
+    Task UploadBackgroundImage(User user, string cloudinary);
 }

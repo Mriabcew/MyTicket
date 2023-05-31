@@ -10,11 +10,9 @@ namespace MyTicket.Services.Services;
 public class UserService : IUserService
 {
     private readonly IUserRepository _userRepository;
-    private readonly IUploadImageService _uploadImageService;
-    public UserService(IUserRepository userRepository,IUploadImageService uploadImageService)
+    public UserService(IUserRepository userRepository)
     {
         _userRepository = userRepository;
-        _uploadImageService = uploadImageService;
     }
     public async Task AddNew(RegisterDTO userModel)
     {
@@ -100,7 +98,7 @@ public class UserService : IUserService
     public async Task ChangeBackgroundImage(int userId,string cloudinary)
     {
         var user = await _userRepository.GetUserByIdAsync(userId);
-        await _userRepository.uploadBackgroundImage(user,cloudinary);
+        await _userRepository.UploadBackgroundImage(user,cloudinary);
     }
 
     public async Task ChangeProfileImage(int userId, string cloudinary)

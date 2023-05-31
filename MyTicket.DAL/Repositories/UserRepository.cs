@@ -95,7 +95,7 @@ public class UserRepository : Repository, IUserRepository
 
     }
 
-    public async Task uploadBackgroundImage(User user, string cloudinary)
+    public async Task UploadBackgroundImage(User user, string cloudinary)
     {
         var userToChange = await _context.Users.FirstOrDefaultAsync(u => u.Id == user.Id);
     
