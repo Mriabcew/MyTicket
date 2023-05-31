@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "J:\\ZTPAI\\MyTicket\\MyTicket.Domain\\MyTicket.Domain.csproj": {}
+    "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.Domain\\MyTicket.Domain.csproj": {}
   },
   "projects": {
-    "J:\\ZTPAI\\MyTicket\\MyTicket.Domain\\MyTicket.Domain.csproj": {
+    "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.Domain\\MyTicket.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "J:\\ZTPAI\\MyTicket\\MyTicket.Domain\\MyTicket.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.Domain\\MyTicket.Domain.csproj",
         "projectName": "MyTicket.Domain",
-        "projectPath": "J:\\ZTPAI\\MyTicket\\MyTicket.Domain\\MyTicket.Domain.csproj",
+        "projectPath": "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.Domain\\MyTicket.Domain.csproj",
         "packagesPath": "C:\\Users\\thefo\\.nuget\\packages\\",
-        "outputPath": "J:\\ZTPAI\\MyTicket\\MyTicket.Domain\\obj\\",
+        "outputPath": "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\thefo\\AppData\\Roaming\\NuGet\\NuGet.Config",

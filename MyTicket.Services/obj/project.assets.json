@@ -2096,11 +2096,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "J:\\ZTPAI\\MyTicket\\MyTicket.Services\\MyTicket.Services.csproj",
+      "projectUniqueName": "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.Services\\MyTicket.Services.csproj",
       "projectName": "MyTicket.Services",
-      "projectPath": "J:\\ZTPAI\\MyTicket\\MyTicket.Services\\MyTicket.Services.csproj",
+      "projectPath": "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.Services\\MyTicket.Services.csproj",
       "packagesPath": "C:\\Users\\thefo\\.nuget\\packages\\",
-      "outputPath": "J:\\ZTPAI\\MyTicket\\MyTicket.Services\\obj\\",
+      "outputPath": "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\thefo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2117,14 +2117,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "J:\\ZTPAI\\MyTicket\\MyTicket.Common\\MyTicket.Common.csproj": {
-              "projectPath": "J:\\ZTPAI\\MyTicket\\MyTicket.Common\\MyTicket.Common.csproj"
+            "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.Common\\MyTicket.Common.csproj": {
+              "projectPath": "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.Common\\MyTicket.Common.csproj"
             },
-            "J:\\ZTPAI\\MyTicket\\MyTicket.DAL\\MyTicket.DAL.csproj": {
-              "projectPath": "J:\\ZTPAI\\MyTicket\\MyTicket.DAL\\MyTicket.DAL.csproj"
+            "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.DAL\\MyTicket.DAL.csproj": {
+              "projectPath": "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.DAL\\MyTicket.DAL.csproj"
             },
-            "J:\\ZTPAI\\MyTicket\\MyTicket.Domain\\MyTicket.Domain.csproj": {
-              "projectPath": "J:\\ZTPAI\\MyTicket\\MyTicket.Domain\\MyTicket.Domain.csproj"
+            "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.Domain\\MyTicket.Domain.csproj": {
+              "projectPath": "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.Domain\\MyTicket.Domain.csproj"
             }
           }
         }

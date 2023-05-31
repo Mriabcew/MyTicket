@@ -2777,11 +2777,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "J:\\ZTPAI\\MyTicket\\webapi\\webapi.csproj",
+      "projectUniqueName": "C:\\Users\\thefo\\RiderProjects\\MyTicket\\webapi\\webapi.csproj",
       "projectName": "webapi",
-      "projectPath": "J:\\ZTPAI\\MyTicket\\webapi\\webapi.csproj",
+      "projectPath": "C:\\Users\\thefo\\RiderProjects\\MyTicket\\webapi\\webapi.csproj",
       "packagesPath": "C:\\Users\\thefo\\.nuget\\packages\\",
-      "outputPath": "J:\\ZTPAI\\MyTicket\\webapi\\obj\\",
+      "outputPath": "C:\\Users\\thefo\\RiderProjects\\MyTicket\\webapi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\thefo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2798,11 +2798,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "J:\\ZTPAI\\MyTicket\\MyTicket.DAL\\MyTicket.DAL.csproj": {
-              "projectPath": "J:\\ZTPAI\\MyTicket\\MyTicket.DAL\\MyTicket.DAL.csproj"
+            "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.DAL\\MyTicket.DAL.csproj": {
+              "projectPath": "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.DAL\\MyTicket.DAL.csproj"
             },
-            "J:\\ZTPAI\\MyTicket\\MyTicket.Services\\MyTicket.Services.csproj": {
-              "projectPath": "J:\\ZTPAI\\MyTicket\\MyTicket.Services\\MyTicket.Services.csproj"
+            "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.Services\\MyTicket.Services.csproj": {
+              "projectPath": "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.Services\\MyTicket.Services.csproj"
             }
           }
         }

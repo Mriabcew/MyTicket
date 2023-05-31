@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Dd9q1FNCuaE5AcS8NpH6VFjrUYYT8E3Cataej4qPI3nIjT+QPfUA06Ht3c93kwYykY1Z4ube3MisKA9QxsEw/A==",
+  "dgSpecHash": "Rn4JD+cOq2CVYvJX/rnt1RcZFPeVM2sRx1dFDndugs9SdRTkBqSnhRCUC9t0MKiz3hheHXSz/BGd6h3SwW0sEw==",
   "success": true,
-  "projectFilePath": "J:\\ZTPAI\\MyTicket\\MyTicket.Services\\MyTicket.Services.csproj",
+  "projectFilePath": "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.Services\\MyTicket.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thefo\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\thefo\\.nuget\\packages\\cloudinarydotnet\\1.20.0\\cloudinarydotnet.1.20.0.nupkg.sha512",

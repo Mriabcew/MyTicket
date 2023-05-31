@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TaX/FraL8e4cJYUCzw3i56SfkXIaelCgmRMDb01aIGjPQxQ5Q4wzWB1lvba/HbZKBfz+z0XU+7K598SOkUmpGQ==",
+  "dgSpecHash": "BibjUIB4a46hyFq0e3W/vN42Z82ZF1CSRf9nyVpCEFpV3tb1/9fN5p6Pu0dIgXGebcL1981Bf33sChik8KjLlw==",
   "success": true,
-  "projectFilePath": "J:\\ZTPAI\\MyTicket\\MyTicket.DAL\\MyTicket.DAL.csproj",
+  "projectFilePath": "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.DAL\\MyTicket.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thefo\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\thefo\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",

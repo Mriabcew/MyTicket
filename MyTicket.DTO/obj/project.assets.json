@@ -60,11 +60,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "J:\\ZTPAI\\MyTicket\\MyTicket.DTO\\MyTicket.DTO.csproj",
+      "projectUniqueName": "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.DTO\\MyTicket.DTO.csproj",
       "projectName": "MyTicket.DTO",
-      "projectPath": "J:\\ZTPAI\\MyTicket\\MyTicket.DTO\\MyTicket.DTO.csproj",
+      "projectPath": "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.DTO\\MyTicket.DTO.csproj",
       "packagesPath": "C:\\Users\\thefo\\.nuget\\packages\\",
-      "outputPath": "J:\\ZTPAI\\MyTicket\\MyTicket.DTO\\obj\\",
+      "outputPath": "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.DTO\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\thefo\\AppData\\Roaming\\NuGet\\NuGet.Config",

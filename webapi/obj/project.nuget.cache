@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3m7zbsOqxgAja0vdcgJh3TeCt1H/wePqTe4r5qF4+gSdoCC0+yPOsSh6qf+sqShjhj6c82IyrlWfDYA/caXK6A==",
+  "dgSpecHash": "wlruxVrq/3kjtYLDcWILwdFf4z7tlBKnzNTo8isJvKxawws9Q6ZqDFXzp0N5NMsCVPR9tX/f0Cl4muw5hFO5GA==",
   "success": true,
-  "projectFilePath": "J:\\ZTPAI\\MyTicket\\webapi\\webapi.csproj",
+  "projectFilePath": "C:\\Users\\thefo\\RiderProjects\\MyTicket\\webapi\\webapi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thefo\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\thefo\\.nuget\\packages\\cloudinarydotnet\\1.20.0\\cloudinarydotnet.1.20.0.nupkg.sha512",

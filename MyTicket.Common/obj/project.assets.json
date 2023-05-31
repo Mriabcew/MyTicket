@@ -139,11 +139,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "J:\\ZTPAI\\MyTicket\\MyTicket.Common\\MyTicket.Common.csproj",
+      "projectUniqueName": "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.Common\\MyTicket.Common.csproj",
       "projectName": "MyTicket.Common",
-      "projectPath": "J:\\ZTPAI\\MyTicket\\MyTicket.Common\\MyTicket.Common.csproj",
+      "projectPath": "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.Common\\MyTicket.Common.csproj",
       "packagesPath": "C:\\Users\\thefo\\.nuget\\packages\\",
-      "outputPath": "J:\\ZTPAI\\MyTicket\\MyTicket.Common\\obj\\",
+      "outputPath": "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.Common\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\thefo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -160,11 +160,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "J:\\ZTPAI\\MyTicket\\MyTicket.Domain\\MyTicket.Domain.csproj": {
-              "projectPath": "J:\\ZTPAI\\MyTicket\\MyTicket.Domain\\MyTicket.Domain.csproj"
+            "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.Domain\\MyTicket.Domain.csproj": {
+              "projectPath": "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.Domain\\MyTicket.Domain.csproj"
             },
-            "J:\\ZTPAI\\MyTicket\\MyTicket.DTO\\MyTicket.DTO.csproj": {
-              "projectPath": "J:\\ZTPAI\\MyTicket\\MyTicket.DTO\\MyTicket.DTO.csproj"
+            "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.DTO\\MyTicket.DTO.csproj": {
+              "projectPath": "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.DTO\\MyTicket.DTO.csproj"
             }
           }
         }

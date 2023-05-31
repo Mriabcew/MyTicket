@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HrSJl7g1PrlFNJVoVK1bPYmDW4zXjXBtC8syf4wQCl2/pIOuIwpHax+q2KRsXr+oC6C8ha9L83qvSchNFdRmqg==",
+  "dgSpecHash": "qTMa/9Gs6XCnGllYaRv/Ie0t6O4P4F+flRdEzbuPtxlRo+fsflrZ1pA0xOGnCy/cevqQ5SyJPVKAj1OsANbmEA==",
   "success": true,
-  "projectFilePath": "J:\\ZTPAI\\MyTicket\\MyTicket.Domain\\MyTicket.Domain.csproj",
+  "projectFilePath": "C:\\Users\\thefo\\RiderProjects\\MyTicket\\MyTicket.Domain\\MyTicket.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
