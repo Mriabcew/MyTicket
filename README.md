@@ -1,3 +1,4 @@
 # MyTicket
 
-./Database ERD.PNG
+#Database ERD
+![plot](./Database ERD.PNG)
