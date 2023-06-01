@@ -1,4 +1,4 @@
 # MyTicket
 
-#Database ERD
+##Database ERD
 ![db](DatabaseERD.PNG)
