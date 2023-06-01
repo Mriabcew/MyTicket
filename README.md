@@ -1,4 +1,4 @@
 # MyTicket
 
-##Database ERD
+## Database Visualization
 ![db](DatabaseERD.PNG)
