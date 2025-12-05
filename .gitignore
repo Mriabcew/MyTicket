@@ -1,0 +1,35 @@
+# Build results
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+*.vsidx
+*.vspscc
+
+# NuGet
+packages/
+*.nupkg
+
+# Rider
+.idea/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+appsettings.Development.json
+
+# Temporary files
+*.tmp
+*.temp
